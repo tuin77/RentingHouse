@@ -1,0 +1,252 @@
+.home-card {
+  background: #fff;
+  border-radius: 24rpx;
+  margin: 24rpx;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.05);
+}
+
+.swiper-container {
+  width: 100%;
+  height: 400rpx;
+  position: relative;
+}
+
+.swiper-image {
+  width: 100%;
+  height: 100%;
+}
+
+// 移除自定义轮播点，使用微信原生的
+.wx-swiper-dots {
+  .wx-swiper-dot {
+    width: 12rpx;
+    height: 12rpx;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    margin: 0 4rpx;
+
+    &.wx-swiper-dot-active {
+      background: #fff;
+    }
+  }
+}
+
+// 顶部标签样式
+.top-tags {
+  display: flex;
+  gap: 8rpx;
+  z-index: 1;
+}
+
+.top-tag {
+  padding: 4rpx 12rpx;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 4rpx;
+  font-size: 24rpx;
+  color: #FF4D4F;
+  display: flex;
+  align-items: center;
+}
+
+// 修改标题和价格布局
+.home-card__title {
+  padding: 16rpx 24rpx 8rpx;
+  display: flex;  // 添加flex布局
+  justify-content: space-between;  // 两端对齐
+  align-items: flex-start;  // 顶部对齐
+}
+.title-left {
+  flex: 1;  // 占据剩余空间
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8rpx;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;  // 居中对齐
+  gap: 8rpx;
+  white-space: nowrap;  // 防止换行
+}
+
+.original-price {
+  font-size: 28rpx;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.current-price {
+  font-size: 32rpx;
+  color: #FF4D4F;
+  font-weight: bold;
+}
+
+.price-unit {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.home-card__tags {
+  padding: 8rpx 24rpx;
+  display: flex;
+  gap: 12rpx;
+  flex-wrap: wrap;
+}
+
+.tag-item {
+  height: 44rpx;
+  padding: 0 12rpx;
+  background: #F5F5F5;
+  border-radius: 4rpx;
+  font-size: 24rpx;
+  color: #666;
+  display: flex;
+  align-items: center;
+  
+  &.highlight {
+    background: #FFF1F0;
+    color: #FF4D4F;
+  }
+}
+
+.home-card__address {
+  padding: 8rpx 24rpx;
+  font-size: 26rpx;
+  color: #333;
+}
+
+.home-card__transport {
+  padding: 12rpx 24rpx;
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  flex-wrap: wrap;
+}
+
+.transport-item {
+  display: flex;
+  align-items: center;  // 垂直居中
+  justify-content: center;  // 水平居中
+  height: 48rpx;
+  padding: 0 16rpx;
+  background: #F5F5F5;
+  border-radius: 24rpx;
+  gap: 4rpx;
+  margin: 8rpx 0;  // 添加上下边距
+}
+
+.transport-icon {
+  font-size: 28rpx;
+  display: flex;  // 添加flex布局
+  align-items: center;  // 垂直居中
+}
+
+.transport-time {
+  font-size: 24rpx;
+  color: #333;
+  line-height: 1;  // 调整行高
+}
+
+.home-card__stats {
+  padding: 12rpx 24rpx;
+  border-top: 2rpx solid #F5F5F5;
+  display: flex;
+  align-items: center;
+  gap: 4rpx;
+  color: #FF4D4F;
+  font-size: 24rpx;
+}
+
+.home-card__contact {
+  padding: 16rpx 24rpx;
+  background: #F7F7F7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2rpx solid #EBEBEB;
+}
+
+.agent-info {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+}
+
+.agent-avatar {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+
+.agent-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rpx;
+}
+
+.agent-name {
+  font-size: 28rpx;
+  color: #333;
+  font-weight: 500;
+}
+
+.agent-phone {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 12rpx;
+}
+
+.contact-btn {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &.phone {
+    background: #FF4D4F;
+  }
+  
+  &.wechat {
+    background: #07C160;
+  }
+  
+  .icon {
+    color: #fff;
+    font-size: 36rpx;
+  }
+}
+.home-card__tags {
+  padding: 24rpx 24rpx 12rpx;
+  display: flex;
+  gap: 12rpx;
+  flex-wrap: wrap;
+}
+
+.tag-item {
+  height: 48rpx;
+  padding: 0 16rpx;
+  background: #F5F5F5;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: #666;
+  display: flex;
+  align-items: center;
+  
+  &.highlight {
+    background: #FFF1F0;
+    color: #FF4D4F;
+  }
+}

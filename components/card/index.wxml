@@ -1,0 +1,68 @@
+<view class="home-card">
+  <!-- 轮播图 -->
+  <!-- <swiper class="swiper-container" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}">
+    <swiper-item wx:for="{{images}}" wx:key="index">
+      <image src="{{item}}" mode="aspectFill" class="swiper-image"/>
+    </swiper-item>
+  </swiper> -->
+
+   <t-swiper class="swiper-container" list="{{images}}" navigation="{{ { type: 'dots-bar' } }}"
+              height="400rpx"
+              image-props="{{ { shape: 'round' } }}"
+            />
+  
+
+  <!-- 标题和价格 -->
+  <view class="home-card__title">
+    <view class="title-left">
+      <view class="title">{{title}}</view>
+    </view>
+    <view class="price-container">
+      <text class="original-price">£{{originalPrice}}</text>
+      <text class="current-price">£{{currentPrice}}</text>
+      <text class="price-unit">起/周</text>
+    </view>
+  </view>
+  <!-- 顶部标签 -->
+   <view class="home-card__tags">
+    <view class="tag-item {{tag.highlight ? 'highlight' : ''}}" wx:for="{{tags}}" wx:key="index" wx:for-item="tag">
+      {{tag.text}}
+    </view>
+  </view>
+
+  <!-- 地址 -->
+  <view class="home-card__address">{{address}}</view>
+
+  <!-- 交通信息 -->
+  <!-- <view class="home-card__transport">
+    <view class="transport-item" wx:for="{{transport}}" wx:key="index">
+      <text class="transport-icon">{{item.icon}}</text>
+      <text class="transport-time">{{item.time}}</text>
+    </view>
+  </view> -->
+
+  <!-- 统计信息 -->
+  <view class="home-card__stats">
+    <text class="stats-icon">🔥</text>
+    <text>{{stats}}</text>
+  </view>
+
+  <!-- 联系信息 -->
+  <view class="home-card__contact">
+    <view class="agent-info">
+      <image class="agent-avatar" src="{{agent.avatar}}" mode="aspectFill"/>
+      <view class="agent-details">
+        <text class="agent-name">{{agent.name}}</text>
+        <text class="agent-phone">{{agent.phone}}</text>
+      </view>
+    </view>
+    <view class="contact-buttons">
+      <view class="contact-btn phone">
+        <text class="icon">📞</text>
+      </view>
+      <view class="contact-btn wechat">
+        <text class="icon">💬</text>
+      </view>
+    </view>
+  </view>
+</view>
