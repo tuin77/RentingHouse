@@ -1,0 +1,134 @@
+<view class="rental-details">
+  <!-- 轮播图部分 -->
+  <view class="media-tabs">
+    <t-swiper 
+      class="swiper-container" 
+      list="{{images}}" 
+      navigation="{{ { type: 'dots' } }}" 
+      height="422rpx"
+    />
+    <view class="media-nav">
+      <view class="nav-item active">图片(199)</view>
+      <view class="nav-item">视频(11)</view>
+      <view class="nav-item">直播(3)</view>
+      <view class="nav-item">VR(23)</view>
+      <view class="nav-item">租客实拍(16)</view>
+    </view>
+  </view>
+
+  <!-- 优惠信息条 -->
+  <view class="discount-bar">
+    <view class="discount-left">
+      <image src="/static/rental-details/crown.svg" class="crown-icon" />
+      <text>最高可省 AU$208</text>
+    </view>
+    <view class="discount-right">
+      <text>活动仅剩14天</text>
+    </view>
+  </view>
+
+  <!-- 房源标题和价格 -->
+  <view class="house-title">
+    <text class="title">UniLodge Melbourne City</text>
+    <view class="price-container">
+      <text class="current-price">AU$398.04</text>
+      <text class="price-unit">起/周</text>
+      <text class="original-price">AU$399</text>
+    </view>
+  </view>
+
+  <!-- 评分部分 -->
+  <view class="rating-section">
+    <view class="rating-left">
+      <text class="rating-score">4.6</text>
+      <text class="rating-text">/5 好极了</text>
+    </view>
+    <view class="rating-right">
+      <text class="review-count">67条评价</text>
+      <text class="arrow">></text>
+    </view>
+  </view>
+
+  <!-- 标签列表 -->
+  <view class="tag-list">
+    <view class="tag-item highlight">
+      <text>必住榜</text>
+      <text class="tag-desc">墨尔本必住榜第2名</text>
+      <text class="arrow">></text>
+    </view>
+    <view class="tag-item">
+      <text>2个特惠活动</text>
+      <text class="arrow">></text>
+    </view>
+    <view class="tag-item">
+      <text>学生公寓</text>
+      <text class="question-mark">?</text>
+    </view>
+    <view class="tag-item">
+      <text>0服务费</text>
+    </view>
+  </view>
+
+  <!-- 设施标签 -->
+  <view class="facility-tags">
+    <view class="facility-tag">可短租</view>
+    <view class="facility-tag">代收包裹</view>
+    <view class="facility-tag">包bills</view>
+    <view class="facility-tag">带健身房</view>
+    <view class="facility-tag">带电梯</view>
+  </view>
+
+  <!-- 地址信息 -->
+  <view class="address-section">
+    <view class="address">
+      <text>480 Elizabeth Street, 墨尔本, 维多利亚州 3000</text>
+    </view>
+    <view class="school-distance">
+      <image src="/static/rental-details/school.svg" class="school-icon" />
+      <text>距离RMIT Graduate School of Business and Law0.23km</text>
+      <text class="switch">切换</text>
+    </view>
+  </view>
+
+  <!-- 交通信息 -->
+  <view class="transport-info">
+    <view class="transport-item">
+      <text class="transport-icon">🚶</text>
+      <text class="transport-time">3分钟</text>
+    </view>
+    <view class="transport-item">
+      <text class="transport-icon">🚲</text>
+      <text class="transport-time">1分钟</text>
+    </view>
+    <view class="transport-item">
+      <text class="transport-icon">🚌</text>
+      <text class="transport-time">3分钟</text>
+    </view>
+    <view class="transport-item">
+      <text class="transport-icon">🚗</text>
+      <text class="transport-time">1分钟</text>
+    </view>
+  </view>
+
+  <!-- 订金信息 -->
+  <view class="deposit-info">
+    <view class="info-item">
+      <text class="info-label">订金：</text>
+      <text class="info-value">2周房租</text>
+    </view>
+    <view class="info-item">
+      <text class="info-label">押金：</text>
+      <text class="info-value">4周房租</text>
+    </view>
+    <text class="arrow">></text>
+  </view>
+
+  <!-- 取消订单提示 -->
+  <view class="cancel-order">
+    <view class="cancel-left">
+      <image src="/static/rental-details/check.svg" class="check-icon" />
+      <text>我可以取消订单吗？</text>
+    </view>
+    <text class="arrow">></text>
+  </view>
+</view>

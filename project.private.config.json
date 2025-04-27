@@ -4,6 +4,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/rental-details/index",
+          "pathName": "pages/rental-details/index",
+          "query": "id=undefined",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "message",
           "pathName": "pages/message/index",
           "query": "",

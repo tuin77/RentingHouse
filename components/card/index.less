@@ -1,3 +1,6 @@
+.swiper-container {
+  --td-swiper-radius: 0; /* 取消圆角 */
+}
 .home-card {
   background: #fff;
   border-radius: 24rpx;
@@ -52,7 +55,7 @@
 
 // 修改标题和价格布局
 .home-card__title {
-  padding: 16rpx 24rpx 8rpx;
+  padding: 32rpx 24rpx 0;
   display: flex;  // 添加flex布局
   justify-content: space-between;  // 两端对齐
   align-items: flex-start;  // 顶部对齐
@@ -154,8 +157,7 @@
 }
 
 .home-card__stats {
-  padding: 12rpx 24rpx;
-  border-top: 2rpx solid #F5F5F5;
+  padding: 12rpx 24rpx 24rpx;
   display: flex;
   align-items: center;
   gap: 4rpx;
@@ -204,7 +206,7 @@
 
 .contact-buttons {
   display: flex;
-  gap: 12rpx;
+  gap: 24rpx;
 }
 
 .contact-btn {
@@ -220,7 +222,7 @@
   }
   
   &.wechat {
-    background: #07C160;
+    background: #FF4D4F;
   }
   
   .icon {

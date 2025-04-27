@@ -1,0 +1,12 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "t-tabs": "tdesign-miniprogram/tabs/tabs",
+    "t-swiper": "tdesign-miniprogram/swiper/swiper",
+    "t-pull-down-refresh": "tdesign-miniprogram/pull-down-refresh/pull-down-refresh",
+    "t-message": "tdesign-miniprogram/message/message",
+    "t-button": "tdesign-miniprogram/button/button",
+    "nav": "/components/nav",
+    "card": "/components/card"
+  }
+}

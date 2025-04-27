@@ -34,6 +34,12 @@ Component({
   },
 
   methods: {
+    onCardTap() {
+      const { id } = this.data;
+      wx.navigateTo({
+        url: `/pages/rental-details/index?id=${id}`
+      });
+    },
     onSwiperChange(e) {
       this.setData({
         currentIndex: e.detail.current

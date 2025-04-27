@@ -1,15 +1,6 @@
-<view class="home-card">
+<view class="home-card" bind:tap="onCardTap">
   <!-- 轮播图 -->
-  <!-- <swiper class="swiper-container" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}">
-    <swiper-item wx:for="{{images}}" wx:key="index">
-      <image src="{{item}}" mode="aspectFill" class="swiper-image"/>
-    </swiper-item>
-  </swiper> -->
-
-   <t-swiper class="swiper-container" list="{{images}}" navigation="{{ { type: 'dots-bar' } }}"
-              height="400rpx"
-              image-props="{{ { shape: 'round' } }}"
-            />
+   <t-swiper class="swiper-container" list="{{images}}" navigation="{{ { type: 'dots-bar' } }}" height="400rpx" />
   
 
   <!-- 标题和价格 -->
@@ -18,9 +9,9 @@
       <view class="title">{{title}}</view>
     </view>
     <view class="price-container">
-      <text class="original-price">£{{originalPrice}}</text>
-      <text class="current-price">£{{currentPrice}}</text>
-      <text class="price-unit">起/周</text>
+      <text class="original-price">¥{{originalPrice}}</text>
+      <text class="current-price">¥{{currentPrice}}</text>
+      <text class="price-unit">起/月</text>
     </view>
   </view>
   <!-- 顶部标签 -->
