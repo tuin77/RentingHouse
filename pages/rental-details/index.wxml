@@ -1,12 +1,7 @@
 <view class="rental-details">
   <!-- 轮播图部分 -->
   <view class="media-tabs">
-    <t-swiper 
-      class="swiper-container" 
-      list="{{images}}" 
-      navigation="{{ { type: 'dots' } }}" 
-      height="660rpx"
-    />
+    <t-swiper class="swiper-container" list="{{images}}" navigation="{{ { type: 'dots' } }}" height="660rpx" />
     <view class="media-nav">
       <view class="nav-item active">图片(199)</view>
       <view class="nav-item">视频(11)</view>
@@ -44,7 +39,7 @@
         <text class="rating-score">4.6</text>
         <text class="rating-total">/5 </text>
       </view>
-       <text class="rating-text">好极了</text>
+      <text class="rating-text">好极了</text>
     </view>
     <view class="rating-right">
       <text class="review-count">67条评价</text>
@@ -68,127 +63,59 @@
     <view class="facility-tag">带电梯</view>
   </view>
 
-  <!-- 地址信息 -->
-  <!-- <view class="address-section">
-    <view class="address">
-      <text>480 Elizabeth Street, 墨尔本, 维多利亚州 3000</text>
-    </view>
-    <view class="school-distance">
-      <image src="/static/rental-details/school.svg" class="school-icon" />
-      <text>距离RMIT Graduate School of Business and Law0.23km</text>
-      <text class="switch">切换</text>
-    </view>
-  </view> -->
-
-  <!-- 交通信息 -->
-  <!-- <view class="transport-info">
-    <view class="transport-item">
-      <text class="transport-icon">🚶</text>
-      <text class="transport-time">3分钟</text>
-    </view>
-    <view class="transport-item">
-      <text class="transport-icon">🚲</text>
-      <text class="transport-time">1分钟</text>
-    </view>
-    <view class="transport-item">
-      <text class="transport-icon">🚌</text>
-      <text class="transport-time">3分钟</text>
-    </view>
-    <view class="transport-item">
-      <text class="transport-icon">🚗</text>
-      <text class="transport-time">1分钟</text>
-    </view>
-  </view> -->
-
   <view class="location-card">
     <view class="location-info">
+      <image src="/static/rental-details/detail-map-mark.png" class="location-background-image" />
       <view class="address-section">
         <view class="address-row">
-        
-            <image class="icon" src='/static/rental-details/1.svg' />
-        
+          <t-icon name="location-filled" size="40rpx" class="map-icon" color='#333' />
           <view class="address-text">
             480 Elizabeth Street, 墨尔本, 维多利亚州 3000
-         </view>
-       </view>
-        
-        <view class="university-row">
-          <view class="icon">
-           <image src='/static/rental-details/2.svg' />
-           
-         </view>
-          <view class="university-text">
-            距离RMIT Graduate School of Business and Law 0.23km
-            <span class="switch-text">切换</span>
-         </view>
-       </view>
-     </view>
-      
-      <view class="transportation-section">
-        <view class="transport-option">
-          <view class="transport-icon">
-           <image src='/static/rental-details/3.svg' />
-            
-         </view>
-          <view class="transport-time">3分钟</view>
-       </view>
-        
-        <view class="transport-option">
-          <view class="transport-icon">
-           <image src='/static/rental-details/4.svg' />
-          
-         </view>
-          <view class="transport-time">1分钟</view>
-       </view>
-        
-        <view class="transport-option">
-          <view class="transport-icon">
-
-           <image src='/static/rental-details/5.svg' />
-           
-         </view>
-          <view class="transport-time">3分钟</view>
-       </view>
-        
-        <view class="transport-option">
-          <view class="transport-icon">
-
-           <image src='/static/rental-details/6.svg' />
-           
-         </view>
-          <view class="transport-time">1分钟</view>
-       </view>
-     </view>
-   </view>
-    
-    <view class="map-button">
-      <view class="map-icon-container">
-       <image src='/static/rental-details/7.svg' />
-       
-     </view>
-      <view class="map-text">地图</view>
-   </view>
- </view>
-
-  <!-- 订金信息 -->
-  <view class="deposit-info">
-    <view class="info-item">
-      <text class="info-label">订金：</text>
-      <text class="info-value">2周房租</text>
+          </view>
+        </view>
+        <view class="address-row">
+          <t-icon name="subway-line-filled" size="40rpx" color='#333' class="map-icon" />
+          <view class="address-text">
+            附近通勤 Graduate School of Business and Law 0.23km
+          </view>
+        </view>
+      </view>
+      <view class="map-button">
+        <t-icon name="map-information-1-filled" size="48rpx" data-name="location" color='#0077cc' />
+        <text class="map-text">地图</text>
+      </view>
     </view>
-    <view class="info-item">
-      <text class="info-label">押金：</text>
-      <text class="info-value">4周房租</text>
+    <!-- 订金信息 -->
+    <view class="deposit-info">
+      <view class="info-item">
+        <t-icon name="task-checked-filled" size="36rpx" class="map-icon" color='#666' />
+        <text class="info-label">押金：</text>
+        <text class="info-value">1个月房租</text>
+      </view>
+      <view class="info-item">
+        <t-icon name="calendar-1-filled" size="36rpx" class="map-icon" color='#666' />
+        <text class="info-label">房租：</text>
+        <text class="info-value">4周房租</text>
+      </view>
+      <t-icon name="chevron-right" size="44rpx" class="arrow" color='#666' />
     </view>
-    <text class="arrow">></text>
+    <view class="cancel-order">
+      <view class="cancel-order-content">
+        <view class="cancel-order-left">
+          <t-icon name="check-circle" size="48rpx" color="#0077cc" />
+          <text class="cancel-title">我可以取消订单吗?</text>
+        </view>
+        <t-icon name="chevron-right" size="44rpx" class="arrow" color='#666' />
+      </view>
+      <view class="cancel-policy">
+        <view class="policy-item">• Check in前：支付预订费7天内可免费取消，超过7天不退预订费。预订可以在住户入住的同年的7月31日之前取消。</view>
+        <view class="policy-item">• 如遇到"用户签证被拒"或"未获得学校offer"等情况，可申请退款或申请取消预订，请参考具体细则。</view>
+      </view>
+    </view>
   </view>
+
 
   <!-- 取消订单提示 -->
-  <view class="cancel-order">
-    <view class="cancel-left">
-      <image src="/static/rental-details/check.svg" class="check-icon" />
-      <text>我可以取消订单吗？</text>
-    </view>
-    <text class="arrow">></text>
-  </view>
+  <!-- 取消订单提示 -->
+
 </view>

@@ -2,7 +2,10 @@
   "pages": [
     "pages/home/index",
     "pages/message/index",
-    "pages/my/index"
+    "pages/my/index",
+    "pages/publish-rent/select-character",
+    "pages/publish-rent/select-character/index",
+    "pages/publish-rent/rent-type/index"
   ],
   "usingComponents": {
     "t-toast": "tdesign-miniprogram/toast/toast"

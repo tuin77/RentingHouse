@@ -38,6 +38,8 @@ Page({
     settingList: [
       { name: '联系客服', icon: 'service', type: 'service' },
       { name: '设置', icon: 'setting', type: 'setting', url: '/pages/setting/index' },
+      { name: '发布房源', icon: 'houses', type: 'setting', url: '/pages/setting/index' },
+      { name: '拼室友', icon: 'usergroup-add', type: 'setting', url: '/pages/setting/index' },
     ],
   },
 

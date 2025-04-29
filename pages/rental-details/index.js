@@ -7,7 +7,7 @@ import request from '~/api/request';
 Page({
   data: {
 
-    images: ['http://localhost:3009/image/1395/01JJCAVYWBY4HPVE3FXA9CSS77_h.webp', 'http://localhost:3009/image/1395/01JQPAB0E1Z0PSKH6YG113HDRF_h.webp'],
+    images: ['http://192.168.7.103:3009/image/1395/01JJCAVYWBY4HPVE3FXA9CSS77_h.webp', 'http://192.168.7.103:3009/image/1395/01JQPAB0E1Z0PSKH6YG113HDRF_h.webp'],
   },
   // 生命周期
   async onReady() {
